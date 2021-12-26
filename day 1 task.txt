@@ -38,4 +38,4 @@
                     Location:"Medak"
                     }
  -> object can also be created using new keyword
-    eg: let obj= new  Object();
+   eg: let obj= new  Object();
