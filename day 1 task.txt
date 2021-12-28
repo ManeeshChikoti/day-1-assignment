@@ -16,9 +16,9 @@
 
  ->MULTIPLEXING: HTTP/2  uses single tcp connection to send multiple streams of data at a time.multiplexing solves certain issues of HTTP/1.1.
 
- ->here the text is converted to binary code by using binary protocol,however multiple  streams of data waiting for same resource still causes issues,this issue  was resolved by using prioritization i.e., the order in which streams of data  is loaded.it prioritizes the streams of data  by assigning weights,id's and parent id's to the them.parent id refers to the stream which it is dependent on.the one without parent id is directly associated to root node.briefly speaking,the one with high priority gets loaded first.
+ ->here the text is converted to binary code by using binary protocol,however multiple  streams of data waiting for same resource still causes issues,this issue  was resolved by    using prioritization i.e., the order in which streams of data  is loaded.it prioritizes the streams of data  by assigning weights,id's and parent id's to the them.parent id      refers to the stream which it is dependent on.the one without parent id is directly associated to root node.briefly speaking,the one with high priority gets loaded first.
 
- ->SERVERPUSH:server only sends the data if the client asks for it.but, this approach is not always suitable for mordern day webpages.HTTP/2 solves this issue by allowing          servers to push the content before client asks for it.the server also sends a message letting a client know what pushed content to expect.this significantly reduces server      load.
+ ->SERVERPUSH:server only sends the data if the client asks for it.but, this approach is not always suitable for modern day webpages.HTTP/2 solves this issue by allowing            servers to push the content before client asks for it.the server also sends a message letting a client know what pushed content to expect.this significantly reduces server      load.
 
  ->HEADER COMPRESSION:HTTP/2 uses advanced method called HPACK that eliminates redundant information in header pack.both client and server maintain the list of headers used in      previous client-server requests.HPACK compresses the header before  and is transferred to the server,which then looks for  the encoded information in a list of previously        trasferred header values to reconstruct the full header  information.
 
